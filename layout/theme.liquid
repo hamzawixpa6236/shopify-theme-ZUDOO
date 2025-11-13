@@ -41,6 +41,8 @@
 
     {{ content_for_header }}
 
+   
+
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
@@ -59,6 +61,7 @@
         {% if forloop.index == 1 -%}
           :root,
         {%- endif %}
+        
         .color-{{ scheme.id }} {
           --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
         {% if scheme.settings.background_gradient != empty %}
@@ -254,7 +257,6 @@
         }
       }
     {% endstyle %}
-
     {{ 'base.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -297,8 +299,10 @@
       }
     </script>
   </head>
+ 
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+   
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -308,7 +312,7 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-
+    <h4>Hello</h4>
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
