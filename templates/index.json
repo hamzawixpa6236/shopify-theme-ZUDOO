@@ -10,12 +10,7 @@
 {
   "sections": {
     "image_banner": {
-<<<<<<< HEAD
       "type": "hamza-image-banner"
-=======
-      "type": "hamza-image-banner",
-      "settings": {}
->>>>>>> b69ad12ac7ff9f99a96eebdf9d8590a42f237f1b
     }
   },
   "order": [
