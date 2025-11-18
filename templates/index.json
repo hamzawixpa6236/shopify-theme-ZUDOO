@@ -35,6 +35,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -46,35 +47,6 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
-      }
-    },
-    "hamza_hello_R3nchz": {
-      "type": "hamza-hello",
-      "blocks": {
-        "title_CtDwhE": {
-          "type": "title",
-          "settings": {
-            "text": "hello wixpa",
-            "color-picker": "#ffffff",
-            "bg-color": "#ed3f3a"
-          }
-        },
-        "subtitle_tgrVNy": {
-          "type": "subtitle",
-          "settings": {
-            "text": "hello wixpa",
-            "color-picker": "#ffffff",
-            "bg-color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "title_CtDwhE",
-        "subtitle_tgrVNy"
-      ],
-      "name": "hello word",
-      "settings": {
-        "text-alignment": "center"
       }
     },
     "image_with_text_7Ppw4Q": {
@@ -99,6 +71,7 @@
         "heading_KCkW8p",
         "text_aAet3h"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "{{ metaobjects.shirt.shirt.img.value }}",
@@ -119,7 +92,6 @@
   },
   "order": [
     "image_banner",
-    "hamza_hello_R3nchz",
     "image_with_text_7Ppw4Q"
   ]
 }
