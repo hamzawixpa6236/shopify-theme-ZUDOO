@@ -10,7 +10,20 @@
 {
   "sections": {
     "image_banner": {
-      "type": "hamza-image-banner"
+      "type": "hamza-image-banner",
+      "blocks": {
+        "slide_rWxnwF": {
+          "type": "slide",
+          "settings": {
+            "slide_image": "shopify://shop_images/imgi_146_scrolling-text-1.png",
+            "slide_video": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rWxnwF"
+      ],
+      "settings": {}
     }
   },
   "order": [
